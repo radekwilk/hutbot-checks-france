@@ -80,7 +80,8 @@ $(document).ready(function() {
    const questionsObj = {
 
     q1: {
-        q: "Check the temperature of hot water at a non-handwash sink.",
+        // Hot water temp check
+        q: "Vérifiez la température de l'eau chaude à un évier autre qu'un lave-main",
         limit: 49,
         shortStr: 'Hot water temp check',
         type: 'hot',
@@ -98,7 +99,8 @@ $(document).ready(function() {
         }
     },
     q2: {
-        q: "Record the temperature of the walk-in Freezer.",
+        // Record of temp in walk in freezer
+        q: "Enregistrez la température de la chambre négative",
         limit: -15,
         shortStr: 'walk-in-freezer temp check',
         type: 'cold',
@@ -116,7 +118,8 @@ $(document).ready(function() {
         }
     },
     q3: {
-        q: "Record the temperature of the walk-in fridge.",
+        // Record temp of walk in chiller
+        q: "Enregistrez la température de la chambre froide.",
         limit: 5,
         shortStr: 'walk-in-fridge temp check',
         type: 'cold',
@@ -134,7 +137,8 @@ $(document).ready(function() {
         }
     },
     q4: {
-        q: "Mark yes if you completed your weekly fire safety test and use the comment box to record the call point",
+        // Did you completed fire safety test
+        q: "Avez-vous passé le test hebdomadaire d'alerte incendie ?",
         limit: '',
         shortStr: 'Fire safety point test',
         type: '',
@@ -146,7 +150,8 @@ $(document).ready(function() {
         }
     },
     q5: {
-        q: "Record the names of any visitors to your Hut during your shift",
+        // record names of the visitors 
+        q: "Prenez note des noms de chaque personne venue visiter votre unité pendant votre service",
         limit: '',
         shortStr: 'Visitors record',
         type: '',
@@ -177,7 +182,8 @@ $(document).ready(function() {
     },
 
     q7: {
-        q: "Record the temperature of the fridge.",
+        // record temp of the fridge
+        q: "Enregistrez la température du réfrigérateur.",
         limit: 5,
         shortStr: 'Fridges temp check',
         type: 'cold',
@@ -551,7 +557,7 @@ $(document).ready(function() {
                 if(daysDifference < questionsObj.maxNumberDays) {
                     //counting total number of tasks
                     countTotal++
-                    if(obj[i]['Routine Status'] === 'MISSED') {
+                    if(obj[i]['Routine Status'] === 'MANQUÉ') {
                         //counting number of missed ones
                         countMissed++
                     
@@ -764,11 +770,11 @@ $(document).ready(function() {
             }
 
             // Adding color to the status, Green - on time, orange - late. Red for missed
-            if(status === 'ON TIME') {
+            if(status === "À L'HEURE") {
                 modalStatusAnswer.style.color = 'green'
-            } else if(status === 'LATE') {
+            } else if(status === 'EN RETARD') {
                 modalStatusAnswer.style.color = 'orange'
-            } else if(status === 'MISSED') {
+            } else if(status === 'MANQUÉ') {
                 modalStatusAnswer.style.color = 'red'
             } else {
                 modalStatusAnswer.style.color = 'white'

@@ -17,15 +17,30 @@ font-family: 'Roboto', sans-serif;
 /* END OF GENERAL SETTINGS */
 
 /* Styling of version display box */
-.varsion-display {
+.version-display {
   position: absolute;
   top: 0;
   right: 1rem;
-  width: 6rem;
+  width: 12rem;
+  height: 6rem;
   padding: .5rem 1.5rem;
   font-size: 1.4rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* language flag */
+.language-flag {
+  display: inline-block;
+  width: 3rem;
+  padding-left: 1rem;
+}
+
+.language-flag img {
+  width: 100%;
+}
+
 
 /* HEADER */
 

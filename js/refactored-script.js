@@ -90,11 +90,11 @@ $(document).ready(function() {
         incorrect: 0,
         helpingACEText: function() {
             if(this.missed < 2) {
-                return `There are ${this.incorrect} temps entered which fall outside the range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.incorrect} températures saisis qui se situent en dehors de la plage sans action corrective enregistrée pour ${this.shortStr}`
             } else if(this.incorrect < 2) {
-                return `There are ${this.missed} temps missed with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.missed} températures manquantes sans action corrective enregistrée pour ${this.shortStr}`
             } else {
-                return `There are ${this.missed} temps missed and ${this.incorrect} fall outside range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a  ${this.missed} températures manquantes et ${this.incorrect} se situent en dehors de la plage sans aucune action corrective enregistrée pour ${this.shortStr}`
             }   
         }
     },
@@ -109,12 +109,12 @@ $(document).ready(function() {
         incorrect: 0,
         helpingACEText: function() {
             if(this.missed < 2) {
-                return `There are ${this.incorrect} temps entered which fall outside the range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.incorrect} températures saisis qui se situent en dehors de la plage sans action corrective enregistrée pour ${this.shortStr}`
             } else if(this.incorrect < 2) {
-                return `There are ${this.missed} temps missed with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.missed} températures manquantes sans action corrective enregistrée pour ${this.shortStr}`
             } else {
-                return `There are ${this.missed} temps missed and ${this.incorrect} fall outside range with no corrective action recorded for ${this.shortStr}`
-            }    
+                return `Il y a  ${this.missed} températures manquantes et ${this.incorrect} se situent en dehors de la plage sans aucune action corrective enregistrée pour ${this.shortStr}`
+            }   
         }
     },
     q3: {
@@ -128,12 +128,12 @@ $(document).ready(function() {
         incorrect: 0,
         helpingACEText: function() {
             if(this.missed < 2) {
-                return `There are ${this.incorrect} temps entered which fall outside the range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.incorrect} températures saisis qui se situent en dehors de la plage sans action corrective enregistrée pour ${this.shortStr}`
             } else if(this.incorrect < 2) {
-                return `There are ${this.missed} temps missed with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.missed} températures manquantes sans action corrective enregistrée pour ${this.shortStr}`
             } else {
-                return `There are ${this.missed} temps missed and ${this.incorrect} fall outside range with no corrective action recorded for ${this.shortStr}`
-            }    
+                return `Il y a  ${this.missed} températures manquantes et ${this.incorrect} se situent en dehors de la plage sans aucune action corrective enregistrée pour ${this.shortStr}`
+            }   
         }
     },
     q4: {
@@ -159,7 +159,8 @@ $(document).ready(function() {
         missed: 0,
         incorrect: 0,
         helpingACEText: function() {
-           return `Visitors names have not been logged on ${this.missed} occasion when answered Yes`  
+           return `Les noms des visiteurs n'ont pas été enregistrés à ${this.missed} occasions lorsque la réponse est "Oui"`  
+           
         }
     },
     q6: {
@@ -172,11 +173,11 @@ $(document).ready(function() {
         incorrect: 0,
         helpingACEText: function() {
             if(this.missed < 2) {
-                return `There are ${this.incorrect} temps entered which fall outside the range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.incorrect} températures saisis qui se situent en dehors de la plage sans action corrective enregistrée pour ${this.shortStr}`
             } else if(this.incorrect < 2) {
-                return `There are ${this.missed} temps missed with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.missed} températures manquantes sans action corrective enregistrée pour ${this.shortStr}`
             } else {
-                return `There are ${this.missed} temps missed and ${this.incorrect} fall outside range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a  ${this.missed} températures manquantes et ${this.incorrect} se situent en dehors de la plage sans aucune action corrective enregistrée pour ${this.shortStr}`
             }    
         }
     },
@@ -192,11 +193,11 @@ $(document).ready(function() {
         incorrect: 0,
         helpingACEText: function() {
             if(this.missed < 2) {
-                return `There are ${this.incorrect} temps entered which fall outside the range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.incorrect} températures saisis qui se situent en dehors de la plage sans action corrective enregistrée pour ${this.shortStr}`
             } else if(this.incorrect < 2) {
-                return `There are ${this.missed} temps missed with no corrective action recorded for ${this.shortStr}`
+                return `Il y a ${this.missed} températures manquantes sans action corrective enregistrée pour ${this.shortStr}`
             } else {
-                return `There are ${this.missed} temps missed and ${this.incorrect} fall outside range with no corrective action recorded for ${this.shortStr}`
+                return `Il y a  ${this.missed} températures manquantes et ${this.incorrect} se situent en dehors de la plage sans aucune action corrective enregistrée pour ${this.shortStr}`
             }    
         }
     },
@@ -207,11 +208,11 @@ $(document).ready(function() {
 
     // Object with error messages
     const errorsMsg = {
-        selectFile: "Please select excel file first",
-        selectTask: "Please select question or task from dropdown list",
-        delateTab: "Please delate Report sheet in selected Excel file. It's causing issues with data download.",
-        missingTabs: "Something went wrong. Please ensure you are checking valid Hutbot file.",
-        noRecords: 'Could not find any records for this question',
+        selectFile: "Veuillez d'abord sélectionner le fichier Excel",
+        selectTask: "Veuillez sélectionner une question ou une tâche dans la liste déroulante",
+        delateTab: "Veuillez supprimer la feuille de rapport dans le fichier Excel sélectionné. Cela cause des problèmes de téléchargement de données",
+        missingTabs: " Quelque chose s'est mal passé. Veuillez vous assurer que  le fichier Hutbot est valide.",
+        noRecords: 'Impossible de trouver des enregistrements pour cette question',
     }
 
     //Listening for click on the 'GET INFO' button

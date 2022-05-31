@@ -92,12 +92,13 @@ font-family: 'Roboto', sans-serif;
   visibility: hidden;
 }
 .input-field::before {
-  content: 'Select excel file';
+  /* content: 'Select excel file'; */
+  content: 'Sélectionnez le fichier excel';
   height: 4rem;
   display: inline-block;
   background-color: rgba(227, 42, 51, 0.9);
   color: #fff;
-  border: 1px solid rgba(227, 42, 51, 1);
+  border: 1px solid rgb(26, 20, 20);
   border-radius: .3rem;
   padding: 1.5rem 1rem .5rem 1rem;
   outline: none;
@@ -316,7 +317,8 @@ select {
 }
 
 .store-details::before {
-  content: 'Store details';
+  /* content: 'Store details'; */
+  content: 'Infos du Store';
   font-size: 1.2rem;
   color: rgba(51, 51, 51, 0.6);
   padding: .2rem .6rem;
